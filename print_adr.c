@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   print_adr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mgumienn <mgumienn@student.42warsaw.pl>    +#+  +:+       +#+        */
+/*   By: mgumienn <mgumienn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 18:53:47 by mgumienn          #+#    #+#             */
-/*   Updated: 2025/10/14 18:27:20 by mgumienn         ###   ########.fr       */
+/*   Updated: 2025/10/15 18:50:31 by mgumienn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int print_adr(unsigned long p)
+int	print_adr(unsigned long p)
 {
-	int len;
-	int i;
-	char buffer[17];
-	char *hex;
+	int		len;
+	int		i;
+	char	buffer[17];
+	char	*hex;
 
 	len = 0;
 	i = 16;

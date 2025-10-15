@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mgumienn <mgumienn@student.42warsaw.pl>    +#+  +:+       +#+        */
+/*   By: mgumienn <mgumienn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 16:54:36 by mgumienn          #+#    #+#             */
-/*   Updated: 2025/10/14 18:25:28 by mgumienn         ###   ########.fr       */
+/*   Updated: 2025/10/15 19:03:47 by mgumienn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int check_params(va_list args, const char *params, int i)
+int	check_params(va_list args, const char *params, int i)
 {
 	if (params[i] == 'c')
 		return (print_chr(va_arg(args, int)));
@@ -35,11 +35,11 @@ int check_params(va_list args, const char *params, int i)
 	return (0);
 }
 
-int ft_printf(const char *params, ...)
+int	ft_printf(const char *params, ...)
 {
-	va_list args;
-	int i;
-	int count;
+	va_list	args;
+	int		i;
+	int		count;
 
 	va_start(args, params);
 	i = 0;

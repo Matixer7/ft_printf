@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   print_nbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mgumienn <mgumienn@student.42warsaw.pl>    +#+  +:+       +#+        */
+/*   By: mgumienn <mgumienn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 18:26:56 by mgumienn          #+#    #+#             */
-/*   Updated: 2025/10/14 18:09:58 by mgumienn         ###   ########.fr       */
+/*   Updated: 2025/10/15 19:02:44 by mgumienn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int count_digits(int n)
+int	count_digits(int n)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (n <= 0)
@@ -27,11 +27,11 @@ int count_digits(int n)
 	return (i);
 }
 
-int print_nbr(int n)
+int	print_nbr(int n)
 {
-	unsigned int len;
-	unsigned int nb;
-	char *itoa;
+	unsigned int	len;
+	unsigned int	nb;
+	char			*itoa;
 
 	len = (unsigned int)count_digits(n);
 	itoa = (char *)malloc(sizeof(char) * (len + 1));

@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   print_unbr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mgumienn <mgumienn@student.42warsaw.pl>    +#+  +:+       +#+        */
+/*   By: mgumienn <mgumienn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 17:02:58 by mgumienn          #+#    #+#             */
-/*   Updated: 2025/10/14 18:12:48 by mgumienn         ###   ########.fr       */
+/*   Updated: 2025/10/15 19:03:28 by mgumienn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int count_udigits(unsigned int n)
+int	count_udigits(unsigned int n)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (n <= 0)
@@ -29,8 +29,8 @@ int count_udigits(unsigned int n)
 
 int	print_unbr(unsigned int n)
 {
-	unsigned int len;
-	char *itoa;
+	unsigned int	len;
+	char			*itoa;
 
 	len = (unsigned int)count_udigits(n);
 	itoa = (char *)malloc(sizeof(char) * (len + 1));

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   print_chr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mgumienn <mgumienn@student.42warsaw.pl>    +#+  +:+       +#+        */
+/*   By: mgumienn <mgumienn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 18:26:15 by mgumienn          #+#    #+#             */
-/*   Updated: 2025/10/13 18:26:51 by mgumienn         ###   ########.fr       */
+/*   Updated: 2025/10/15 19:01:25 by mgumienn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int print_chr(char c)
+int	print_chr(char c)
 {
 	write(1, &c, 1);
 	return (1);

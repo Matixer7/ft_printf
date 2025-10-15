@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   print_hex.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mgumienn <mgumienn@student.42warsaw.pl>    +#+  +:+       +#+        */
+/*   By: mgumienn <mgumienn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 17:04:06 by mgumienn          #+#    #+#             */
-/*   Updated: 2025/10/14 18:28:19 by mgumienn         ###   ########.fr       */
+/*   Updated: 2025/10/15 19:02:22 by mgumienn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int print_lowerhex(int n)
+int	print_lowerhex(int n)
 {
-	int 			i;
+	int				i;
 	char			buffer[17];
-	char 			*hex;
+	char			*hex;
 	unsigned int	un;
 
 	if (n == 0)
@@ -34,12 +34,12 @@ int print_lowerhex(int n)
 	return (write(1, &buffer[i], 16 - i));
 }
 
-int print_upperhex(int n)
+int	print_upperhex(int n)
 {
-	int i;
-	char buffer[17];
-	char *hex;
-	unsigned int un;
+	int				i;
+	char			buffer[17];
+	char			*hex;
+	unsigned int	un;
 
 	if (n == 0)
 		return (write(1, "0", 1));
